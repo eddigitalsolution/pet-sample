@@ -112,7 +112,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="relative w-full max-w-xs sm:max-w-sm lg:max-w-md bg-[#E8D8C8] rounded-3xl p-4 sm:p-5 shadow-2xl border-4 border-[#FDFBF7] space-y-3 sm:space-y-4"
           >
-            <div className="w-full aspect-[4/4.5] sm:aspect-[4/4.8] rounded-2xl overflow-hidden shadow-inner flex items-center justify-center bg-[#FDFBF7]">
+            <div className="w-full aspect-4/4.5 sm:aspect-4/4.8 rounded-2xl overflow-hidden shadow-inner flex items-center justify-center bg-[#FDFBF7]">
               <img 
                 src="/hero_portrait_dog_1788267183899.jpg"
                 onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=700&h=525&fit=crop&auto=format'; }}
