@@ -103,21 +103,21 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
         </div>
 
         {/* Right Column: Hero Dog Card */}
-        <div className="lg:col-span-5 relative flex justify-center items-center mt-4 lg:mt-0 pb-8 sm:pb-12 lg:pb-0">
+        <div className="lg:col-span-5 relative flex justify-center items-center mt-2 lg:mt-0 pb-6 sm:pb-10 lg:pb-0">
           
           {/* Main Dog Portrait Container */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="relative w-full max-w-xs sm:max-w-sm lg:max-w-md bg-[#E8D8C8] rounded-3xl p-4 sm:p-6 shadow-2xl border-4 border-[#FDFBF7] space-y-3 sm:space-y-4"
+            className="relative w-full max-w-xs sm:max-w-sm lg:max-w-md bg-[#E8D8C8] rounded-3xl p-4 sm:p-5 shadow-2xl border-4 border-[#FDFBF7] space-y-3 sm:space-y-4"
           >
-            <div className="w-full aspect-4/3 rounded-2xl overflow-hidden shadow-inner flex items-center justify-center bg-[#FDFBF7]">
+            <div className="w-full aspect-[4/4.5] sm:aspect-[4/4.8] rounded-2xl overflow-hidden shadow-inner flex items-center justify-center bg-[#FDFBF7]">
               <img 
                 src="/hero_portrait_dog_1788267183899.jpg"
                 onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=700&h=525&fit=crop&auto=format'; }}
                 alt="Luxury Groomed Pet Portrait" 
-                className="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700"
+                className="w-full h-full object-cover object-top transform hover:scale-105 transition-transform duration-700"
               />
             </div>
             
@@ -133,11 +133,11 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
             </div>
           </motion.div>
 
-          {/* Floating Grooming Tool 1: Scissors — hidden on xs */}
+          {/* Floating Grooming Tool 1: Precision Shear */}
           <motion.div
-            animate={{ y: [0, -12, 0], rotate: [0, 6, 0] }}
+            animate={{ y: [0, -10, 0], rotate: [0, 4, 0] }}
             transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
-            className="hidden sm:flex absolute -top-4 lg:-top-6 -left-2 sm:-left-4 lg:-left-6 bg-[#FDFBF7] p-3 sm:p-4 rounded-2xl shadow-xl border border-[#E8D8C8] items-center gap-2 sm:gap-3 z-20"
+            className="hidden sm:flex absolute -top-8 lg:-top-10 -left-4 sm:-left-6 lg:-left-8 bg-[#FDFBF7] p-3 sm:p-4 rounded-2xl shadow-xl border border-[#E8D8C8] items-center gap-2 sm:gap-3 z-20"
           >
             <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-[#D97736]/15 flex items-center justify-center text-[#D97736]">
               <Scissors className="w-4 h-4 sm:w-5 sm:h-5" />
@@ -148,11 +148,11 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
             </div>
           </motion.div>
 
-          {/* Floating Grooming Tool 2: Paw Badge — hidden on xs */}
+          {/* Floating Grooming Tool 2: Paw Badge */}
           <motion.div
-            animate={{ y: [0, 14, 0], rotate: [0, -8, 0] }}
+            animate={{ y: [0, 12, 0], rotate: [0, -6, 0] }}
             transition={{ repeat: Infinity, duration: 5, ease: "easeInOut" }}
-            className="hidden sm:flex absolute bottom-2 sm:-bottom-4 lg:-bottom-6 -right-2 sm:-right-4 bg-[#1A1918] text-[#FDFBF7] p-3 sm:p-4 rounded-2xl shadow-2xl items-center gap-2 sm:gap-3 border border-white/10 z-20"
+            className="hidden sm:flex absolute -bottom-6 sm:-bottom-8 lg:-bottom-10 -right-4 sm:-right-6 bg-[#1A1918] text-[#FDFBF7] p-3 sm:p-4 rounded-2xl shadow-2xl items-center gap-2 sm:gap-3 border border-white/10 z-20"
           >
             <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-[#D97736] flex items-center justify-center text-lg sm:text-xl">
               🐾
