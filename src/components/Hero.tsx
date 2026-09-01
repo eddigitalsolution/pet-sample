@@ -8,7 +8,7 @@ interface HeroProps {
 
 export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
   return (
-    <section className="relative min-h-screen pt-20 sm:pt-28 pb-0 overflow-hidden flex flex-col justify-between bg-[#FDFBF7]">
+    <section id="home" className="relative min-h-screen pt-20 sm:pt-28 pb-0 overflow-hidden flex flex-col justify-between bg-[#FDFBF7]">
       
       {/* Background Decorative Grid */}
       <div className="absolute inset-0 pointer-events-none opacity-40">

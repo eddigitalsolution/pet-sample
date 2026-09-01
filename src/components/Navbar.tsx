@@ -26,7 +26,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         
         {/* Brand Logo */}
-        <a href="#" className="group flex items-center gap-3 text-left">
+        <a href="#home" className="group flex items-center gap-3 text-left">
           <img 
             src="/brand_logo.svg" 
             alt="The Glow-Up Logo" 
