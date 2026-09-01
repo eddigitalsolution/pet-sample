@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A1918"/>
+      <stop offset="100%" stop-color="#2D2B28"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E8D8C8"/>
+      <stop offset="50%" stop-color="#D97736"/>
+      <stop offset="100%" stop-color="#B85D20"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Circle -->
+  <circle cx="256" cy="256" r="240" fill="url(#bgGrad)" stroke="#E8D8C8" stroke-width="8" stroke-opacity="0.3"/>
+  <circle cx="256" cy="256" r="220" fill="none" stroke="url(#goldGrad)" stroke-width="2" stroke-dasharray="8 6" opacity="0.6"/>
+
+  <!-- Main Paw Pad (Heart-inspired Luxury Sculpt) -->
+  <path d="M256 220 C230 180, 170 200, 170 250 C170 300, 225 350, 256 370 C287 350, 342 300, 342 250 C342 200, 282 180, 256 220 Z" 
+        fill="url(#goldGrad)"/>
+
+  <!-- Toe Pads (4 Scissored Crown Drops) -->
+  <!-- Top Left Toe -->
+  <ellipse cx="160" cy="170" rx="28" ry="36" transform="rotate(-25 160 170)" fill="url(#goldGrad)"/>
+  <!-- Middle Left Toe -->
+  <ellipse cx="218" cy="135" rx="26" ry="34" transform="rotate(-8 218 135)" fill="url(#goldGrad)"/>
+  <!-- Middle Right Toe -->
+  <ellipse cx="294" cy="135" rx="26" ry="34" transform="rotate(8 294 135)" fill="url(#goldGrad)"/>
+  <!-- Top Right Toe -->
+  <ellipse cx="352" cy="170" rx="28" ry="36" transform="rotate(25 352 170)" fill="url(#goldGrad)"/>
+
+  <!-- Scissors Detail Inside Main Pad -->
+  <path d="M242 270 L270 310 M270 270 L242 310" stroke="#1A1918" stroke-width="4" stroke-linecap="round" opacity="0.4"/>
+</svg>
