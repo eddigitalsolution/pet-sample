@@ -114,7 +114,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
           >
             <div className="w-full aspect-4/4.5 sm:aspect-4/4.8 rounded-2xl overflow-hidden shadow-inner flex items-center justify-center bg-[#FDFBF7]">
               <img 
-                src="/hero_portrait_dog_1788267183899.jpg"
+                src="/hero_section.png"
                 onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=700&h=525&fit=crop&auto=format'; }}
                 alt="Luxury Groomed Pet Portrait" 
                 className="w-full h-full object-cover object-top transform hover:scale-105 transition-transform duration-700"
