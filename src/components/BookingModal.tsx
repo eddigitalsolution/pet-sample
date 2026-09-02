@@ -72,6 +72,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) =
                       name="petName"
                       type="text"
                       required
+                      autoComplete="off"
                       placeholder="e.g. Milo"
                       value={petName}
                       onChange={(e) => setPetName(e.target.value)}
@@ -87,6 +88,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) =
                     name="breed"
                     type="text"
                     required
+                    autoComplete="off"
                     placeholder="e.g. Golden Doodle"
                     value={breed}
                     onChange={(e) => setBreed(e.target.value)}
@@ -121,6 +123,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) =
                     name="preferredDate"
                     type="date"
                     required
+                    autoComplete="off"
                     value={preferredDate}
                     onChange={(e) => setPreferredDate(e.target.value)}
                     className="w-full px-4 py-3 rounded-xl bg-[#F5EFE6] border border-[#D9C8B4] focus:outline-hidden focus:border-[#1A1918] text-[#1A1918]"
@@ -134,6 +137,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) =
                     name="parentName"
                     type="text"
                     required
+                    autoComplete="name"
                     placeholder="e.g. Sarah Tan"
                     value={parentName}
                     onChange={(e) => setParentName(e.target.value)}
@@ -149,6 +153,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) =
                   name="phone"
                   type="tel"
                   required
+                  autoComplete="tel"
                   placeholder="+60 11-3071 9502"
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
