@@ -1,5 +1,4 @@
-import React from 'react';
-import { Phone, MapPin, Clock, Mail } from 'lucide-react';
+import { Phone, MapPin, Clock } from 'lucide-react';
 
 interface FooterProps {
   onOpenBooking: () => void;
@@ -54,11 +53,6 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
             <p className="text-xs text-[#A8988B] font-light max-w-sm leading-relaxed">
               Malaysia’s premier editorial pet grooming atelier. Dedicated to compassionate care, coat artistry, and stress-free spa experiences.
             </p>
-            <div className="flex items-center gap-4 pt-2">
-              <a id="footer-email-link" href="mailto:hello@theglowup-pets.com" aria-label="Email Us" className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center text-[#E8D8C8] hover:bg-[#D97736] transition-colors">
-                <Mail className="w-4 h-4" />
-              </a>
-            </div>
           </div>
 
           {/* Quick Links */}
@@ -103,13 +97,8 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
         </div>
 
         {/* Copyright */}
-        <div className="flex flex-col items-center sm:flex-row sm:justify-between gap-3 text-[11px] text-[#7A6C60] text-center sm:text-left">
+        <div className="flex flex-col items-center sm:flex-row sm:justify-center text-[11px] text-[#7A6C60] text-center">
           <p>© 2026 THE GLOW-UP Pet Grooming Studio. All rights reserved.</p>
-          <div className="flex items-center gap-6">
-            <a id="footer-privacy-link" href="#home" className="hover:underline">Privacy Policy</a>
-            <a id="footer-terms-link" href="#home" className="hover:underline">Terms of Service</a>
-            <a id="footer-sitemap-link" href="#home" className="hover:underline">Sitemap</a>
-          </div>
         </div>
 
       </div>
