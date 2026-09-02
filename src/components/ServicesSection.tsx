@@ -125,6 +125,7 @@ export const ServicesSection: React.FC<ServicesProps> = ({ onOpenBooking }) => {
               return (
                 <div
                   key={service.id}
+                  id={`btn-service-card-${service.id}`}
                   onClick={() => setSelectedService(service)}
                   className={`cursor-pointer p-4 sm:p-6 rounded-2xl transition-all duration-300 border ${
                     isSelected
@@ -222,6 +223,8 @@ export const ServicesSection: React.FC<ServicesProps> = ({ onOpenBooking }) => {
 
                 {/* CTA */}
                 <button
+                  id="btn-reserve-service"
+                  name="reserveService"
                   onClick={onOpenBooking}
                   className="w-full cursor-pointer flex items-center justify-center gap-2 bg-[#1A1918] text-[#FDFBF7] py-3.5 rounded-full text-xs font-bold uppercase tracking-wider hover:bg-[#D97736] transition-colors shadow-md"
                 >

@@ -37,7 +37,10 @@ export const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) =
         
         {/* Close Button */}
         <button
+          id="btn-modal-close"
+          name="closeModal"
           onClick={onClose}
+          aria-label="Close modal"
           className="absolute top-6 right-6 p-2 rounded-full hover:bg-[#E8D8C8]/60 text-[#1A1918] transition-colors"
         >
           <X className="w-5 h-5" />
@@ -57,14 +60,16 @@ export const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) =
               </p>
             </div>
 
-            <form onSubmit={handleSubmit} className="space-y-4 text-xs font-medium">
+            <form id="booking-form" name="bookingForm" onSubmit={handleSubmit} className="space-y-4 text-xs font-medium">
               
               {/* Pet Info */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-[#7A6C60] mb-1">Pet Name *</label>
+                  <label htmlFor="booking-pet-name" className="block text-[#7A6C60] mb-1">Pet Name *</label>
                   <div className="relative">
                     <input
+                      id="booking-pet-name"
+                      name="petName"
                       type="text"
                       required
                       placeholder="e.g. Milo"
@@ -76,8 +81,10 @@ export const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) =
                 </div>
 
                 <div>
-                  <label className="block text-[#7A6C60] mb-1">Breed & Fur Type *</label>
+                  <label htmlFor="booking-breed" className="block text-[#7A6C60] mb-1">Breed &amp; Fur Type *</label>
                   <input
+                    id="booking-breed"
+                    name="breed"
                     type="text"
                     required
                     placeholder="e.g. Golden Doodle"
@@ -90,24 +97,28 @@ export const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) =
 
               {/* Service Selection */}
               <div>
-                <label className="block text-[#7A6C60] mb-1">Select Service *</label>
+                <label htmlFor="booking-service" className="block text-[#7A6C60] mb-1">Select Service *</label>
                 <select
+                  id="booking-service"
+                  name="service"
                   value={service}
                   onChange={(e) => setService(e.target.value)}
                   className="w-full px-4 py-3 rounded-xl bg-[#F5EFE6] border border-[#D9C8B4] focus:outline-hidden focus:border-[#1A1918] text-[#1A1918]"
                 >
-                  <option value="The Full Sculpt & Fluff">The Full Sculpt & Fluff (RM 180-280)</option>
-                  <option value="Executive Spa Bath & Refresh">Executive Spa Bath & Refresh (RM 120-180)</option>
+                  <option value="The Full Sculpt & Fluff">The Full Sculpt &amp; Fluff (RM 180-280)</option>
+                  <option value="Executive Spa Bath & Refresh">Executive Spa Bath &amp; Refresh (RM 120-180)</option>
                   <option value="Puppy’s First Glow-Up">Puppy’s First Glow-Up (RM 95)</option>
-                  <option value="Creative Accent & Dye Tint">Creative Accent & Dye Tint (RM 80-150)</option>
+                  <option value="Creative Accent & Dye Tint">Creative Accent &amp; Dye Tint (RM 80-150)</option>
                 </select>
               </div>
 
               {/* Date & Contact */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-[#7A6C60] mb-1">Preferred Date *</label>
+                  <label htmlFor="booking-date" className="block text-[#7A6C60] mb-1">Preferred Date *</label>
                   <input
+                    id="booking-date"
+                    name="preferredDate"
                     type="date"
                     required
                     value={preferredDate}
@@ -117,8 +128,10 @@ export const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) =
                 </div>
 
                 <div>
-                  <label className="block text-[#7A6C60] mb-1">Your Name *</label>
+                  <label htmlFor="booking-parent-name" className="block text-[#7A6C60] mb-1">Your Name *</label>
                   <input
+                    id="booking-parent-name"
+                    name="parentName"
                     type="text"
                     required
                     placeholder="e.g. Sarah Tan"
@@ -130,8 +143,10 @@ export const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) =
               </div>
 
               <div>
-                <label className="block text-[#7A6C60] mb-1">WhatsApp Contact Number *</label>
+                <label htmlFor="booking-phone" className="block text-[#7A6C60] mb-1">WhatsApp Contact Number *</label>
                 <input
+                  id="booking-phone"
+                  name="phone"
                   type="tel"
                   required
                   placeholder="+60 11-3071 9502"
@@ -143,6 +158,8 @@ export const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) =
 
               {/* Submit */}
               <button
+                id="btn-booking-submit"
+                name="submitBooking"
                 type="submit"
                 className="w-full cursor-pointer flex items-center justify-center gap-2 bg-[#1A1918] text-[#FDFBF7] py-4 rounded-xl text-xs font-bold uppercase tracking-wider hover:bg-[#D97736] transition-colors shadow-lg mt-4"
               >
@@ -166,6 +183,8 @@ export const BookingModal: React.FC<BookingModalProps> = ({ isOpen, onClose }) =
               </p>
             </div>
             <button
+              id="btn-booking-done"
+              name="finishBooking"
               onClick={onClose}
               className="px-8 py-3 bg-[#1A1918] text-[#FDFBF7] rounded-full text-xs font-bold uppercase tracking-wider"
             >

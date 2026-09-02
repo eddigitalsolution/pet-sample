@@ -62,6 +62,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
             className="flex flex-col xs:flex-row flex-wrap items-stretch xs:items-center gap-3 pt-1"
           >
             <button
+              id="btn-hero-book"
+              name="heroBook"
               onClick={onOpenBooking}
               className="cursor-pointer group flex items-center justify-center gap-3 bg-[#1A1918] text-[#FDFBF7] px-6 sm:px-8 py-3.5 sm:py-4 rounded-full text-sm font-bold uppercase tracking-wider hover:bg-[#D97736] transition-all duration-300 shadow-lg hover:shadow-xl"
             >
@@ -70,6 +72,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
             </button>
 
             <a
+              id="btn-hero-see-transformation"
               href="#reveal"
               className="group flex items-center justify-center gap-2 px-6 py-3.5 sm:py-4 rounded-full bg-[#E8D8C8]/40 hover:bg-[#E8D8C8] transition-colors text-sm font-semibold text-[#1A1918]"
             >

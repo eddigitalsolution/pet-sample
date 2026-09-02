@@ -25,6 +25,8 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
             </h3>
           </div>
           <button
+            id="btn-footer-cta-book"
+            name="footerCtaBook"
             onClick={onOpenBooking}
             className="cursor-pointer shrink-0 w-full md:w-auto bg-[#FDFBF7] text-[#1A1918] px-8 py-4 rounded-full text-xs font-bold uppercase tracking-wider hover:bg-[#D97736] hover:text-[#FDFBF7] transition-all shadow-xl"
           >
@@ -53,7 +55,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
               Malaysia’s premier editorial pet grooming atelier. Dedicated to compassionate care, coat artistry, and stress-free spa experiences.
             </p>
             <div className="flex items-center gap-4 pt-2">
-              <a href="mailto:hello@theglowup-pets.com" className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center text-[#E8D8C8] hover:bg-[#D97736] transition-colors">
+              <a id="footer-email-link" href="mailto:hello@theglowup-pets.com" aria-label="Email Us" className="w-9 h-9 rounded-full bg-white/5 flex items-center justify-center text-[#E8D8C8] hover:bg-[#D97736] transition-colors">
                 <Mail className="w-4 h-4" />
               </a>
             </div>
@@ -65,24 +67,24 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
               Navigation
             </h4>
             <ul className="space-y-2 text-xs text-[#A8988B]">
-              <li><a href="#reveal" className="hover:text-[#FDFBF7] transition-colors">The Signature Reveal</a></li>
-              <li><a href="#services" className="hover:text-[#FDFBF7] transition-colors">Grooming Menu</a></li>
-              <li><a href="#groomers" className="hover:text-[#FDFBF7] transition-colors">Master Artisans</a></li>
-              <li><a href="#gallery" className="hover:text-[#FDFBF7] transition-colors">Hall of Fluff</a></li>
-              <li><a href="#studio" className="hover:text-[#FDFBF7] transition-colors">Studio Experience</a></li>
+              <li><a id="footer-link-reveal" href="#reveal" className="hover:text-[#FDFBF7] transition-colors">The Signature Reveal</a></li>
+              <li><a id="footer-link-services" href="#services" className="hover:text-[#FDFBF7] transition-colors">Grooming Menu</a></li>
+              <li><a id="footer-link-groomers" href="#groomers" className="hover:text-[#FDFBF7] transition-colors">Master Artisans</a></li>
+              <li><a id="footer-link-gallery" href="#gallery" className="hover:text-[#FDFBF7] transition-colors">Hall of Fluff</a></li>
+              <li><a id="footer-link-studio" href="#studio" className="hover:text-[#FDFBF7] transition-colors">Studio Experience</a></li>
             </ul>
           </div>
 
           {/* Contact Details */}
           <div className="md:col-span-4 space-y-3">
             <h4 className="text-xs uppercase tracking-widest text-[#E8D8C8] font-bold">
-              Salon Contact & Location
+              Salon Contact &amp; Location
             </h4>
             <div className="space-y-2.5 text-xs text-[#A8988B]">
               <div className="flex items-center gap-2.5 whitespace-nowrap">
                 <Phone className="w-4 h-4 text-[#D97736] shrink-0" />
                 <span className="text-xs text-[#A8988B]">
-                  WhatsApp / Call: <a href="https://wa.me/601130719502" target="_blank" rel="noopener noreferrer" className="font-bold text-[#FDFBF7] hover:text-[#D97736]">+60 11-3071 9502</a>
+                  WhatsApp / Call: <a id="footer-whatsapp-link" href="https://wa.me/601130719502" target="_blank" rel="noopener noreferrer" className="font-bold text-[#FDFBF7] hover:text-[#D97736]">+60 11-3071 9502</a>
                 </span>
               </div>
 
@@ -104,9 +106,9 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
         <div className="flex flex-col items-center sm:flex-row sm:justify-between gap-3 text-[11px] text-[#7A6C60] text-center sm:text-left">
           <p>© 2026 THE GLOW-UP Pet Grooming Studio. All rights reserved.</p>
           <div className="flex items-center gap-6">
-            <a href="#" className="hover:underline">Privacy Policy</a>
-            <a href="#" className="hover:underline">Terms of Service</a>
-            <a href="#" className="hover:underline">Sitemap</a>
+            <a id="footer-privacy-link" href="#home" className="hover:underline">Privacy Policy</a>
+            <a id="footer-terms-link" href="#home" className="hover:underline">Terms of Service</a>
+            <a id="footer-sitemap-link" href="#home" className="hover:underline">Sitemap</a>
           </div>
         </div>
 
