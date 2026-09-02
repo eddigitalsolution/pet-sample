@@ -57,6 +57,15 @@ The production-ready output will be compiled into the `dist/` directory.
 
 ---
 
+## 📋 Global Setup & Markdown Rules (.md)
+
+This project uses workspace and global agent rules to enforce deployment standards and security guidelines across projects:
+
+- **[`.agents/rules/cloudflare-setup.md`](.agents/rules/cloudflare-setup.md)**: Global agent rule for Cloudflare Pages & Workers static deployments. Prevents Content Security Policy (CSP) header mismatches, missing security headers, form `autoComplete` issues, and SPA routing 404 errors.
+- **[`CLOUDFLARE.md`](CLOUDFLARE.md)**: Cloudflare deployment reference guide detailing `public/_headers` (CSP & security policy) and `public/_redirects` (SPA route fallback).
+
+---
+
 ## 📱 Contact
 
 - **Studio**: THE GLOW-UP Pet Grooming Studio
