@@ -59,10 +59,12 @@ The production-ready output will be compiled into the `dist/` directory.
 
 ## 📋 Global Setup & Markdown Rules (.md)
 
-This project uses workspace and global agent rules to enforce deployment standards and security guidelines across projects:
+This project enforces global agent standards and architecture guidelines through structured Markdown rules across all project domains:
 
-- **[`.agents/rules/cloudflare-setup.md`](.agents/rules/cloudflare-setup.md)**: Global agent rule for Cloudflare Pages & Workers static deployments. Prevents Content Security Policy (CSP) header mismatches, missing security headers, form `autoComplete` issues, and SPA routing 404 errors.
-- **[`CLOUDFLARE.md`](CLOUDFLARE.md)**: Cloudflare deployment reference guide detailing `public/_headers` (CSP & security policy) and `public/_redirects` (SPA route fallback).
+- **[`GEMINI.md`](GEMINI.md)**: Main project instruction manifest linking active workspace rules, commands, and architecture standards.
+- **[`.agents/rules/project-standards.md`](.agents/rules/project-standards.md)**: Global project rules covering UI/UX editorial design, React 19 + TypeScript standards, form accessibility (`autoComplete`), CSP security headers, SPA routing, and build/deploy workflows.
+- **[`.agents/rules/cloudflare-setup.md`](.agents/rules/cloudflare-setup.md)**: Global setup rule for Cloudflare Pages & Workers static hosting (CSP header configuration, SPA route rewrites, build environment).
+- **[`CLOUDFLARE.md`](CLOUDFLARE.md)**: Quick-reference deployment guide for Cloudflare static configuration (`public/_headers` & `public/_redirects`).
 
 ---
 
