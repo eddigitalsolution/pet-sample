@@ -70,7 +70,7 @@ export const BeforeAfterReveal: React.FC = () => {
                 alt="Groomed Pet After Transformation"
                 className="w-full h-full object-cover object-center"
               />
-              <div className="absolute bottom-6 right-6 bg-[#1A1918]/85 backdrop-blur-md px-4 py-2 rounded-full border border-white/10 text-xs font-semibold text-[#E8D8C8] z-30">
+              <div className="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 bg-[#1A1918]/85 backdrop-blur-md px-3 py-1.5 sm:px-4 sm:py-2 rounded-full border border-white/10 text-[10px] sm:text-xs font-semibold text-[#E8D8C8] z-30 whitespace-nowrap">
                 AFTER: Salon Scissored Glow-Up
               </div>
             </div>
@@ -87,8 +87,8 @@ export const BeforeAfterReveal: React.FC = () => {
                 className="absolute inset-0 w-full h-full object-cover object-center max-w-none"
                 style={{ width: containerRef.current ? `${containerRef.current.clientWidth}px` : '100%' }}
               />
-              <div className="absolute bottom-6 left-6 bg-[#1A1918]/85 backdrop-blur-md px-4 py-2 rounded-full border border-white/10 text-xs font-semibold text-[#A8988B] z-30">
-                🐾 BEFORE: Scruffy & Natural
+              <div className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 bg-[#1A1918]/85 backdrop-blur-md px-3 py-1.5 sm:px-4 sm:py-2 rounded-full border border-white/10 text-[10px] sm:text-xs font-semibold text-[#A8988B] z-30 whitespace-nowrap">
+                BEFORE: Scruffy &amp; Natural
               </div>
             </div>
 
