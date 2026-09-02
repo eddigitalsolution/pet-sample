@@ -30,6 +30,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
           <img 
             src="/brand_logo.svg" 
             alt="The Glow-Up Logo" 
+            width="40"
+            height="40"
             className="w-10 h-10 rounded-full group-hover:rotate-12 transition-transform duration-300 shadow-xs"
           />
           <div>

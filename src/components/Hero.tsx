@@ -116,7 +116,11 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
               <img 
                 src="/hero_section.png"
                 onError={(e) => { e.currentTarget.src = 'https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=700&h=525&fit=crop&auto=format'; }}
-                alt="Luxury Groomed Pet Portrait" 
+                alt="Luxury Groomed Pet Portrait - Lady Florence Afghan Hound" 
+                width="600"
+                height="720"
+                loading="eager"
+                decoding="async"
                 className="w-full h-full object-cover object-top transform hover:scale-105 transition-transform duration-700"
               />
             </div>

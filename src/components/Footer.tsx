@@ -41,6 +41,8 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
               <img 
                 src="/brand_logo.svg" 
                 alt="The Glow-Up Logo" 
+                width="40"
+                height="40"
                 className="w-10 h-10 rounded-full"
               />
               <span className="font-serif-display text-2xl font-bold tracking-tight">
