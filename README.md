@@ -14,7 +14,7 @@
 - **Hall of Fluff**: Lookbook transformation gallery.
 - **Sensory Calming Studio Experience**: 4-pillar studio section emphasizing physical safety, noise reduction, and calming aromatherapy.
 - **Direct WhatsApp Integration**: Interactive booking modal configured for direct WhatsApp appointment requests (`+60 11-3071 9502`).
-- **Cloudflare Pages Production Build**: SPA routing configuration (`_redirects`) and security headers (`_headers`).
+- **Cloudflare Workers Assets Production Build**: Native SPA routing (`wrangler.jsonc` & `200.html` fallback), postbuild cleanup, and security headers (`_headers`).
 - **Lighthouse 90+ SEO**: Complete Open Graph, Twitter metadata, Schema.org `PetGrooming` JSON-LD structured data, vector SVG brand logos, and favicon.
 
 ---
@@ -25,6 +25,7 @@
 - **Styling**: Tailwind CSS v4
 - **Animations**: Framer Motion
 - **Icons**: Lucide React
+- **Deployment & Hosting**: Cloudflare Workers (Wrangler)
 - **Icons & Brand**: Custom Vector SVG Logo & Favicon
 
 ---
@@ -47,13 +48,15 @@ npm run dev
 
 Open `http://localhost:5173/` in your browser.
 
-### 3. Production Build
+### 3. Production Build & Deployment
 
 ```bash
+# Build production assets into dist/ and generate 200.html SPA fallback
 npm run build
-```
 
-The production-ready output will be compiled into the `dist/` directory.
+# Build and deploy to Cloudflare Workers via Wrangler
+npm run deploy
+```
 
 ---
 
@@ -63,9 +66,9 @@ This project enforces global agent standards and architecture guidelines through
 
 - **[`GEMINI.md`](GEMINI.md)**: Main project instruction manifest linking active workspace rules, commands, and architecture standards.
 - **[`.agents/rules/project-standards.md`](.agents/rules/project-standards.md)**: Global project rules covering UI/UX editorial design, React 19 + TypeScript standards, form accessibility (`autoComplete`), CSP security headers, SPA routing, and build/deploy workflows.
-- **[`.agents/rules/cloudflare-setup.md`](.agents/rules/cloudflare-setup.md)**: Global setup rule for Cloudflare Pages & Workers static hosting (CSP header configuration, SPA route rewrites, build environment).
+- **[`.agents/rules/cloudflare-setup.md`](.agents/rules/cloudflare-setup.md)**: Global setup rule for Cloudflare Pages & Workers static hosting (CSP header configuration, native SPA routing, build environment).
 - **[`.agents/rules/contact-details.md`](.agents/rules/contact-details.md)**: Global contact and WhatsApp business details standard (`+60 11-3071 9502`).
-- **[`CLOUDFLARE.md`](CLOUDFLARE.md)**: Quick-reference deployment guide for Cloudflare static configuration (`public/_headers` & `public/_redirects`).
+- **[`CLOUDFLARE.md`](CLOUDFLARE.md)**: Quick-reference deployment guide for Cloudflare static configuration (`wrangler.jsonc`, `public/_headers`, & `200.html`).
 
 
 ---
