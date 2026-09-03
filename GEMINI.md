@@ -17,6 +17,12 @@ This project strictly adheres to global code quality, security, design, and depl
   - Header policy (`public/_headers`) and rewrite redirects (`public/_redirects`)
   - Build environment (`NODE_VERSION=20`, `dist` output)
 
+- **[Contact & WhatsApp Standard](file:///.agents/rules/contact-details.md)** (`.agents/rules/contact-details.md`)
+  - Owner & Studio contact information (`+60 11-3071 9502`)
+  - WhatsApp direct link routing (`https://wa.me/601130719502`)
+  - Address and structured business details
+
+
 ## 🛠️ Commands
 
 - `npm run dev`: Start local development server
